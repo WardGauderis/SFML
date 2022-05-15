@@ -1,6 +1,6 @@
 # Support vector machine (SVM)
 
-Similar to the Perceptron Learning Algorithm (PLA), SVM is meant to classify binary data by separating data in two groups. However, instead of trying to a hyperplane that works (like PLA), SVM calculates the hyperplane that best separates the data. Its objective is thus to find the hyperplane that obtains the largest margin between the two groups.
+Similar to the Perceptron Learning Algorithm (PLA), SVM is meant to classify binary data by separating data in two groups. However, instead of trying to a hyperplane that works (like PLA), SVM calculates the hyperplane that best separates the data. Its objective is thus to find the hyperplane that maximizes margin between the two groups. (It is thus an optimization problem)
 
 ![image-20220514162339201](C:\GitHub\SFML\image-20220514162339201.png)
 
