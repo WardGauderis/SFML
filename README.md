@@ -63,13 +63,70 @@ $$
 
 
 
-
-
-To demonstrate the difference between the kernels, we have opted for a non linear dataset that is seperable.
-
+To demonstrate the difference between the three kernels, we have opted for a non linear dataset that is separable. We use the following 2 dimensional spiral dataset.
 
 
 
+-----
+
+Sklearn implements SVM using a soft margin, however, since the synthetic dataset is actually separable a strict margin is preferred. To obtain this stricter margin, we must provide a high C value. When C goes to infinity, we again, obtain the strict margin. Changing the C value corresponds to changing the C value in the following minimization problem
+$$
+\frac{1}{2}\bold{w}^T\bold{w} + \sum_{n=1}^{N} \zeta_n
+$$
+Where 
+$$
+\sum_{n=1}^{N} \zeta_n
+$$
+
+
+corresponds to the total violation. This is a quantification for the points that inside the margin, and thus violate the margin.
+
+<img src="https://miro.medium.com/max/916/1*UylttRyv51Pz0ADkNt4goA.png" alt="Support Vector Machine Explained. Theory, Implementation, and… | by Zixuan  Zhang | Towards Data Science" style="zoom:33%;" />
+
+
+
+Indeed, when C goes to infinity, this is equal to solving the minimization problem for the strict margin. (Which was discussed above)
+$$
+\frac{1}{2}\bold{w}^T\bold{w}
+$$
+
+
+----
+
+
+
+There is a clear difference in the results between the default SVM (linear kernel) approach and the two kernels (RBF, Polynomial). 
+
+All that the linear kernel is able to do separate the data using one linear line. It is clearly not able to fit the data.
+
+In the case of the polynomial kernel, by default Sklearn uses a number of degrees equal to three. This value corresponds to the $Q$ in the polynomial kernel mentioned above. The higher the number of degrees, the more flexible the decision boundary becomes. 
+
+Although a degree of three, clearly does not manage to separate the data, its decision boundary is still different to the linear decision boundary. We try higher degrees of freedom later. Note that the higher the degrees, the more prone the model is to overfitting.
+
+From the third graph above, we can see that the RBF kernel manages to fit the decision boundary really well.
+
+**sv's**?
+
+---
+
+
+
+Lastly, we have tried some different values for the polynomial kernel. We have tried the following degrees: 5, 10, 15, 20, 30 and none of them managed to fit the data decently. 
+
+
+
+---
+
+It is also interesting to look at the number of support vectors that are required to obtain the decision boundary. This has great implications for generalization. Using the formula
+$$
+\mathbb{E}[E_{out}] \le \frac{\mathbb{E}[\text{\# of SVs}]}{\text{N} - 1}.
+$$
+
+---
+
+In the case of the SVM, assuming that  $\mathbb{E}[\text{\# of SVs}] = 17$, we can say the expected value of $E_{out}$ is less than or equal to 4.2%. This is a great result! The linear and polynomial kernels do not perform this well on the generalization bound. This is due to their high number of SVs.
+
+Note: Please keep in mind that the assumption that $\mathbb{E}[\text{\# of SVs}] = 17$ is not entirely correct. To obtain more precise results, the number of SVs should be calculated multiple times.
 
 
 
