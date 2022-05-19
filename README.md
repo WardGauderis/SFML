@@ -6,21 +6,21 @@ Similar to the Perceptron Learning Algorithm (PLA), SVM is meant to classify bin
 
 The way this largest margin is achieved, is by maximizing the distance between the hyperplane and the closest data point to the line. This distance can be expressed as the following equation:
 $$
-\frac{1}{\mid\mid \bold{w}\mid\mid}
+\frac{1}{\mid\mid \mathbf{w}\mid\mid}
 $$
 which can be expressed as a minimization problem via the following equation:
 $$
-\frac{1}{2}\bold{w}^T\bold{w}
+\frac{1}{2}\mathbf{w}^T\mathbf{w}
 $$
 Subject to the following constraints (assuming the data is linearly separable):
 $$
-y_n(\bold{w}^T\bold{x_n} + b) >= 1
+y_n(\mathbf{w}^T\mathbf{x_n} + b) >= 1
 $$
 
 
-The minimization problem is solved by formulating it as a Lagrange minimization problem and by applying quadratic programming to obtain the vector $\bold{\alpha}$. This vector $\bold{\alpha}$ enables us to compute the weights as follows:
+The minimization problem is solved by formulating it as a Lagrange minimization problem and by applying quadratic programming to obtain the vector $\mathbf{\alpha}$. This vector $\mathbf{\alpha}$ enables us to compute the weights as follows:
 $$
-\bold{w}= \sum_{x_n \in \text{ SV}}{\alpha_n y_n \bold{x_n}}
+\mathbf{w}= \sum_{x_n \in \text{ SV}}{\alpha_n y_n \mathbf{x_n}}
 $$
 
 
@@ -32,7 +32,7 @@ Although the default SVM approach works well for linearly separable data, non li
 
 The first drawback of these space transformations is that someone must chose what the non linear transformation should be. The second problem is that when a complex decision boundary is required, the complexity of the transformation increases, which increases computational requirements. The kernel trick is meant to solve these issues. When we look at the Lagrange equation below, via quadratic programming the alpha's can be obtained. A dot product must be calculated for each data point in the transformed space. The higher the dimension of the space, the more complex the computation becomes. The kernel trick prevents having to calculate this dot product, allowing for transformations to infinite dimensional space.
 $$
-\mathcal{L}(\bold{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\bold{z_n}^T \bold{z}_m
+\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\mathbf{z_n}^T \mathbf{z}_m
 $$
 
 
@@ -44,18 +44,18 @@ In what follows next, we investigate the following research question: "*How do d
 
 Linear kernel, which is equivalent to the default SVM explained above:
 $$
-K(\bold{x}, \bold{x}') = \bold{z}^T \bold{z}'
+K(\mathbf{x}, \mathbf{x}') = \mathbf{z}^T \mathbf{z}'
 $$
 Polynomial kernel:
 
 
 $$
-K(\bold{x}, \bold{x}')=(1 + \bold{x}^T\bold{x}')^Q
+K(\mathbf{x}, \mathbf{x}')=(1 + \mathbf{x}^T\mathbf{x}')^Q
 $$
 
 Radial basis function:
 $$
-K(\bold{x}, \bold{x}') = e^{-\gamma \mid\mid \bold{x}-\bold{x}' \mid\mid^2}
+K(\mathbf{x}, \mathbf{x}') = e^{-\gamma \mid\mid \mathbf{x}-\mathbf{x}' \mid\mid^2}
 $$
 
 
@@ -71,7 +71,7 @@ To demonstrate the difference between the three kernels, we have opted for a non
 
 Sklearn implements SVM using a soft margin, however, since the synthetic dataset is actually separable a strict margin is preferred. To obtain this stricter margin, we must provide a high C value. When C goes to infinity, we again, obtain the strict margin. Changing the C value corresponds to changing the C value in the following minimization problem
 $$
-\frac{1}{2}\bold{w}^T\bold{w} + \sum_{n=1}^{N} \zeta_n
+\frac{1}{2}\mathbf{w}^T\mathbf{w} + \sum_{n=1}^{N} \zeta_n
 $$
 Where 
 $$
@@ -87,7 +87,7 @@ corresponds to the total violation. This is a quantification for the points that
 
 Indeed, when C goes to infinity, this is equal to solving the minimization problem for the strict margin. (Which was discussed above)
 $$
-\frac{1}{2}\bold{w}^T\bold{w}
+\frac{1}{2}\mathbf{w}^T\mathbf{w}
 $$
 
 
@@ -111,7 +111,6 @@ From the third graph above, we can see that the RBF kernel manages to fit the de
 
 
 
-Lastly, we have tried some different values for the polynomial kernel. We have tried the following degrees: 5, 10, 15, 20, 30 and none of them managed to fit the data decently. 
 
 
 
