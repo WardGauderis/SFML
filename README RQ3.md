@@ -2,9 +2,9 @@
 
 **How does the decision tree regressor model compare to the k-nearest neighbour regressor model in terms of in- and out-of-sample error for time series forecasting?**
 
-Decision tree regression (DTR) and K-neirest neighbor (KNN) are two techniques for solving regression problems. They, however, differ vastly in how their regression hypothesis is obtained. DTR makes its predictions based on a model it learned, while KNN does not learn a model at all, the data is the model. 
+Decision tree regression (DTR) and K-neirest neighbor (KNN) are two techniques for solving regression problems. Both models have the great advantage of being transparant in how predications are obtained. They, however, differ vastly in the way their regression hypothesis is obtained. DTR makes its predictions based on a model it learned, while KNN does not learn a model at all, the data is the model. 
 
-Let us try to understand the workings of both algorithms in more detail.
+In this section we will compare the two techniques on a real world data set in terms of in- and out-of-sample error. Let us first get a better understanding of the workings of these two techniques.
 
 
 
@@ -86,11 +86,13 @@ Source: [1.10. Decision Trees — scikit-learn 1.1.1 documentation](https://scik
 
 
 
+**TODO?: ** WELKE HEURISTICS, params voor overfitting prevention.
+
 # KNN regression
 
 Just like decision trees, KNN can be used for both classification and regression. KNN, however, differs vastly from decision trees in the way the predictions are obtained. Instead of training a model and letting the model do the predications, in KNN the data is the model. 
 
-KNN has the advantage that it is a lot simpler than decision trees. The idea behind KNN is that given an input $\bold{x}$, the target value $y$ is obtained by looking at all k data points in $\bold{x}$'s neighborhoud. This neighborhood contains all the k data points that are the most similar to $\bold{x}$. The output of the KNN algorithm depends on whether it is doing classificaiton or regression.  In the case of classification, the target value for $\bold{x}$ is obtained by selecting the mode of the target values in its neighborheid. In the regression case, however, the average value of the neighborhood's target values is selected as output. 
+KNN has the advantage that it is a lot simpler than decision trees. The idea behind KNN is that given an input $\bold{x}$, the target value $y$ is obtained by looking at all k data points in $\bold{x}$'s neighborhoud. This neighborhood contains all the k data points that are the most similar to $\bold{x}$. The output of the KNN algorithm depends on whether it is doing classificaiton or regression.  In the case of classification, the target value for $\bold{x}$ is obtained by selecting the mode of the target values in its neighborheid. In the regression case, the average value of the neighborhood's target values is selected as output. 
 
 The image below visually illustrates the workings of the KNN algorithm. In the example k = 1 and thus the neighborhood only contains one point. The algorithm would thus select the target value of the star within the circle as its output for $\bold{x}$.
 
