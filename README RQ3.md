@@ -102,49 +102,42 @@ Source: [KNN Classification Tutorial using Sklearn Python | DataCamp](https://ww
 
 
 
+----
+
 
 
 The distance can be calculated via different metrics:
 
 - **Minkowski Distance**
+  $$
+  d(\mathbf{x}, \mathbf{y}) =(\sum_{i=1}^n\abs{x_i - y_i}^p)^\frac{1}{p}
+  $$
+  The parameter $p$ allows us to manipulate the behaviour of the distance function. For example, when $p$ is set equal to 2, the distance corresponds to the euclidian distance. If $p$ is set to 1, the result corresponds to manhattan distance.
+
+  
+
 - **Euclidean Distance**
+  $$
+  d(\mathbf{x}, \mathbf{y}) = \sqrt{\sum_{i=1}^{n}{{(x_i - y_i)^2}}}
+  $$
+  
+
 - **Manhattan Distance**
+  $$
+  d(\mathbf{x}, \mathbf{y}) = \sum_{i=1}^{n}{{\abs{x_i - y_i}}}
+  $$
+  
+
+  The image below graphically displays the difference between the manhattan and euclidian distance metrics. 
+
+  ![Manhattan Distance Calculator](https://uploads-cdn.omnicalculator.com/images/manhattan_distance.png?width=425&enlarge=0&format=jpeg)
 
 
 
-if the features are categorical,
-
-
-
-
-
-Closest points:
-
-- categorical features, vs real valued features
-
-
-
-```
-KNN regression is a non-parametric method that, in an intuitive manner, approximates the association between independent variables and the continuous outcome by averaging the observations in the same neighbourhood. The size of the neighbourhood needs to be set by the analyst or can be chosen using cross-validation (we will see this later) to select the size that minimises the mean-squared error.
-
-While the method is quite appealing, it quickly becomes impractical when the dimension increases, i.e., when there are many independent variables.
-
-https://bookdown.org/tpinto_home/Regression-and-Classification/k-nearest-neighbours-regression.html
-```
-
-
-
-Argument why probably not so good results: I can imagine appliance values to either be high or low, so maybe the mean of 2 mountains may not be such a good strategy.
-
-values has many extremes
+The neirest neighbors can be computed using different algorithms. Sklearn offers BallTree, KDTree or a brute for search. These are algorithms used to structure data in multidimensional space. Both the BallTree and KDTree algorithms structure their data in the form of a tree. Both algorithms require a leaf size parameter, which inffluences the speed of construction and the required memory of the tree.
 
 
 
 
 
-
-
-
-
-bs: We are given a data set with the temperatures of different rooms (eg: kitchen, bathroom, bedroom, etc) in a particular house at different timestamps. **Our task is to predict the humidity in the living room** at a given timepoint. This is the same regression problem we will tackle to compare the two algorithms later.
 
