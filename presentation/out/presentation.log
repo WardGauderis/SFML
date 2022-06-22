@@ -1,0 +1,7 @@
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Arch Linux)  (format=lualatex 2022.6.14)  22 JUN 2022 22:34
+ restricted system commands enabled.
+ file:line:error style messages enabled.
+**presentation.tex
+(
+./presentation.tex:0: error:  (file io): fflush() failed (Broken pipe)
+./presentation.tex:0:  ==> Fatal error occurred, no output PDF file produced!

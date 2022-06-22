@@ -1,0 +1,8 @@
+# Fdb version 3
+["lualatex"] 1655930052 "presentation.tex" "out/presentation.pdf" "presentation" 1655930052
+  "/var/lib/texmf/web2c/luahbtex/lualatex.fmt" 1655207347 4561209 8c7b0aa392e99ee84d4521397d679793 ""
+  "out/presentation.aux" 1655930050 3940 62f89b53bb41be57d797809288ce730a ""
+  "presentation.tex" 1655929964 3810 48502c4cc1b62d4c4a3deb8151a89125 ""
+  (generated)
+  "out/presentation.log"
+  "out/presentation.pdf"

@@ -1,0 +1,115 @@
+\documentclass[9.5pt]{beamer}
+%\usepackage[english]{babel}
+\usepackage{fontspec}
+\usepackage{hyperref}
+\usepackage{animate}
+\usepackage{caption}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{amsfonts}
+
+\usetheme{metropolis}
+
+\metroset{numbering=none}
+\metroset{block=fill}
+
+\title{Research Project}
+\subtitle{Statistical Foundations of Machine Learning}
+\author{Ward Gauderis \& Fabian Denoodt}
+\date{27/06/2022}
+\institute{Vrije Universiteit Brussel}
+
+\captionsetup{labelformat=empty}
+
+
+\begin{document}
+    \maketitle
+
+    \begin{frame}{Summary}
+        \setbeamertemplate{section in toc}[sections numbered]
+        \tableofcontents
+    \end{frame}
+
+
+    \section{stochastic noise and weight decay regularisation}
+    \begin{frame}
+        \textbf{What is the influence of stochastic noise in the dataset on the in- and out-of-sample error of a neural network and how does weight decay regularisation counter this?}
+    \end{frame}
+
+    \begin{frame}{The datasets}
+        Synthetic normalised $(x, y)$ with $x \in \mathbb{R}^2, y \in \{0, 1\}$
+
+        Controllable stochastic noise:
+        \begin{itemize}
+            \item \textbf{Data noise}: $x' = x + \epsilon$ with $\epsilon \sim \mathbb{N}(0, \sigma^2)$
+            \item \textbf{Label noise}: swap fraction $\alpha$ of labels $y$
+        \end{itemize}
+
+        No confounding deterministic noise
+
+        \begin{columns}[onlytextwidth]
+            \column{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.7\linewidth]{images/moons}
+            \end{figure}
+            \column{0.5\textwidth}
+            \begin{figure}
+                \centering
+                \includegraphics[width=0.7\linewidth]{images/circles}
+            \end{figure}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{The models}
+        \begin{block}{Neural network}
+            \small
+            \begin{itemize}
+                \item Predict $h(x) = P(y = 1 | x)$
+                \item Linear transformations with non-linear differentiable ReLU activation functions
+                \item Maximise likelihood by minimising the cross-entropy error
+                \item $(20, 20)$ hidden layers \& 2000 epochs
+            \end{itemize}
+        \end{block}
+
+        Augmented error regularisation:
+        \[E_{aug}(h, \lambda, \Omega) = E_{in}(h) + \dfrac{\lambda}{N}\Omega(h)\]
+
+        Weight-decay with $L_2$ norm:
+        \[E_{aug}(w) = E_{in}(w) + \dfrac{\lambda}{N} ||w||^2\]
+    \end{frame}
+
+    \begin{frame}{Experimental setup}
+        Repeat for every combination of dataset type, label and data noise:
+        \begin{enumerate}
+            \item Generate 13 datasets with noise $\in [0, 0.75]$
+            \item Create 13 models of size 100 with regularisation $\in [0, 1.5]$
+            \item Train every model on every dataset
+            \item Compare decision boundaries and training and testing accuracies
+        \end{enumerate}
+    \end{frame}
+
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[height=0.9\textheight]{images/boundaries}
+            \caption{Moon dataset with data noise}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}{Conclusions}
+    \end{frame}
+
+
+    \section{Support vector machine kernel comparison}
+
+    \begin{frame}
+        \textbf{How do the linear kernel, polynomial kernel and radial basis function compare to each other, when applied to a synthetic two-dimensional dataset?}
+    \end{frame}
+
+
+    \section{Decision tree and k-nearest neighbours regressor forecasting}
+    \begin{frame}
+        \textbf{How does the decision tree regressor model compare to the k-nearest neighbour regressor model in terms of in- and out-of-sample error for time series forecasting?}
+    \end{frame}
+\end{document}

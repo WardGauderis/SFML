@@ -1,0 +1,4 @@
+PWD /home/ward/Documents/SFML/project/presentation
+INPUT /var/lib/texmf/web2c/luahbtex/lualatex.fmt
+INPUT ./presentation.tex
+OUTPUT out/presentation.log
