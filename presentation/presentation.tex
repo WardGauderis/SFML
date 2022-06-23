@@ -19,8 +19,10 @@
 \date{27/06/2022}
 \institute{Vrije Universiteit Brussel}
 
-\captionsetup{labelformat=empty}
 
+\captionsetup{labelformat=empty}
+\setlength\belowcaptionskip{0pt}
+\captionsetup{labelfont=scriptsize,labelformat=empty}
 
 \begin{document}
     \maketitle
@@ -82,8 +84,8 @@
     \begin{frame}{Experimental setup}
         Repeat for every combination of dataset type, label and data noise:
         \begin{enumerate}
-            \item Generate 13 datasets with noise $\in [0, 0.75]$
-            \item Create 13 models of size 100 with regularisation $\in [0, 1.5]$
+            \item Generate 13 datasets of size 100 with noise $\in [0, 0.75]$
+            \item Create 13 models of with regularisation $\in [0, 1.5]$
             \item Train every model on every dataset
             \item Compare decision boundaries and training and testing accuracies
         \end{enumerate}
@@ -96,8 +98,42 @@
             \caption{Moon dataset with data noise}
         \end{figure}
     \end{frame}
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/moon_data}
+            \caption{Moon dataset with data noise}
+        \end{figure}
+    \end{frame}
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/circles_label}
+            \caption{Circles dataset with label noise}
+        \end{figure}
+    \end{frame}
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/moon_combined}
+            \caption{Moon dataset with combined noise}
+        \end{figure}
+    \end{frame}
 
     \begin{frame}{Conclusions}
+        Neural networks with less effective parameters generalise better on noisier datasets
+
+        Label noise versus data noise
+        \begin{itemize}
+            \item more detrimental to generalisability
+            \item can be combated with less regularisation
+        \end{itemize}
+
+        Underfitting is less punishing than overfitting
+
+        $E_{in}$ becomes less informative about $E_{out}$ with increasing noise and regularisation
+
+        Optimal $\lambda$ is hard to know up front without data snooping and should be chosen through model selection
     \end{frame}
 
 
@@ -112,4 +148,124 @@
     \begin{frame}
         \textbf{How does the decision tree regressor model compare to the k-nearest neighbour regressor model in terms of in- and out-of-sample error for time series forecasting?}
     \end{frame}
+
+    \begin{frame}{Experimental setup}
+        \begin{columns}[onlytextwidth]
+            \column{0.45\textwidth}
+            \centering
+            Root-mean-square error:
+            \[E = \sqrt{\dfrac{\sum_{n=0}^N (y_n - h(x_n))^2}{N}}\]
+            \column{0.45\textwidth}
+            \centering
+            Regression score:
+            \[1-\dfrac{\sum_{n=0}^N (y_n - h(x_n))^2}{\sum_{n=0}^N (y_n - \bar{y})^2}\]
+        \end{columns}
+
+        Data:
+        \begin{enumerate}
+            \item Split into subsequent training and testing set
+            \item Process normalised data
+        \end{enumerate}
+
+        Model comparison:
+        \begin{enumerate}
+            \item Baseline models
+            \item Equally tuned models through randomised grid search
+        \end{enumerate}
+
+    \end{frame}
+
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/validation}
+            \caption{Time series cross-validation for forecasting}
+        \end{figure}
+    \end{frame}
+
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/full}
+            \caption{Baseline decision tree regressor}
+        \end{figure}
+    \end{frame}
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/baseline_tree}
+            \caption{Baseline decision tree regressor}
+        \end{figure}
+        \small
+        \begin{table}
+            \begin{tabular}{l l l}
+                & Training & Testing \\
+                Score & 1.000    & 0.479   \\
+                RMSE  & 0.000    & 1.551
+            \end{tabular}
+        \end{table}
+    \end{frame}
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/tuned_tree}
+            \caption{Tuned decision tree regressor}
+        \end{figure}
+        \small
+        \begin{table}
+            \begin{tabular}{l l l}
+                & Training & Testing \\
+                Score & 0.949    & 0.554   \\
+                RMSE  & 0.871    & 1.434
+            \end{tabular}
+        \end{table}
+    \end{frame}
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/baseline_k}
+            \caption{Baseline k-nearest neighbours regressor}
+        \end{figure}
+        \small
+        \begin{table}
+            \begin{tabular}{l l l}
+                & Training & Testing \\
+                Score & 0.945  & 0.040   \\
+                RMSE  & 0.908    & 2.105
+            \end{tabular}
+        \end{table}
+    \end{frame}
+
+    \begin{frame}{}
+        \begin{figure}
+            \centering
+            \includegraphics[width=\linewidth]{images/tuned_k}
+            \caption{Tuned k-nearest neighbours regressor}
+        \end{figure}
+        \small
+        \begin{table}
+            \begin{tabular}{l l l}
+                & Training & Testing \\
+                Score & 1.000    & 0.089   \\
+                RMSE  & 0.000    & 2.050
+            \end{tabular}
+        \end{table}
+    \end{frame}
+
+    \begin{frame}{Conclusions}
+        Tuned decision tree regressor is most likely to generalise best
+
+        Model nature is visible in predictions:
+        \begin{itemize}
+            \item Decision tree predicts conservative smooth surfaces
+            \item K-nearest neighbours predicts noisy erratic changes resembling the training data
+        \end{itemize}
+
+        Time-series forecasting is extrapolation
+
+        Model selection can improve $E_{out}$ by reducing or increasing model complexity
+
+        Data preprocessing and feature selection is important and can be guided also by cross-validation
+    \end{frame}
+
 \end{document}
