@@ -33,7 +33,7 @@
     \end{frame}
 
 
-    \section{stochastic noise and weight decay regularisation}
+    \section{Stochastic noise and weight decay regularisation}
     \begin{frame}
         \textbf{What is the influence of stochastic noise in the dataset on the in- and out-of-sample error of a neural network and how does weight decay regularisation counter this?}
     \end{frame}
@@ -92,6 +92,7 @@
     \end{frame}
 
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[height=0.9\textheight]{images/boundaries}
@@ -99,6 +100,7 @@
         \end{figure}
     \end{frame}
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[width=\linewidth]{images/moon_data}
@@ -106,6 +108,7 @@
         \end{figure}
     \end{frame}
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[width=\linewidth]{images/circles_label}
@@ -113,6 +116,7 @@
         \end{figure}
     \end{frame}
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[width=\linewidth]{images/moon_combined}
@@ -121,19 +125,21 @@
     \end{frame}
 
     \begin{frame}{Conclusions}
-        Neural networks with less effective parameters generalise better on noisier datasets
-
-        Label noise versus data noise
         \begin{itemize}
-            \item more detrimental to generalisability
-            \item can be combated with less regularisation
+            \item Neural networks with less effective parameters generalise better on noisier datasets
+
+            \item Label noise versus data noise
+            \begin{itemize}
+                \item[-] more detrimental to generalisability
+                \item[-] can be combated with less regularisation
+            \end{itemize}
+
+            \item Underfitting is less punishing than overfitting
+
+            \item $E_{in}$ becomes less informative about $E_{out}$ with increasing noise and regularisation
+
+            \item Optimal $\lambda$ is hard to know up front without data snooping and should be chosen through model selection
         \end{itemize}
-
-        Underfitting is less punishing than overfitting
-
-        $E_{in}$ becomes less informative about $E_{out}$ with increasing noise and regularisation
-
-        Optimal $\lambda$ is hard to know up front without data snooping and should be chosen through model selection
     \end{frame}
 
 
@@ -176,6 +182,7 @@
     \end{frame}
 
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[width=\linewidth]{images/validation}
@@ -184,6 +191,7 @@
     \end{frame}
 
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[width=\linewidth]{images/full}
@@ -191,6 +199,7 @@
         \end{figure}
     \end{frame}
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[width=\linewidth]{images/baseline_tree}
@@ -206,6 +215,7 @@
         \end{table}
     \end{frame}
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[width=\linewidth]{images/tuned_tree}
@@ -221,6 +231,7 @@
         \end{table}
     \end{frame}
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[width=\linewidth]{images/baseline_k}
@@ -230,13 +241,14 @@
         \begin{table}
             \begin{tabular}{l l l}
                 & Training & Testing \\
-                Score & 0.945  & 0.040   \\
+                Score & 0.945    & 0.040   \\
                 RMSE  & 0.908    & 2.105
             \end{tabular}
         \end{table}
     \end{frame}
 
     \begin{frame}{}
+        \bigskip
         \begin{figure}
             \centering
             \includegraphics[width=\linewidth]{images/tuned_k}
@@ -253,19 +265,21 @@
     \end{frame}
 
     \begin{frame}{Conclusions}
-        Tuned decision tree regressor is most likely to generalise best
-
-        Model nature is visible in predictions:
         \begin{itemize}
-            \item Decision tree predicts conservative smooth surfaces
-            \item K-nearest neighbours predicts noisy erratic changes resembling the training data
+            \item Tuned decision tree regressor is most likely to generalise best
+
+            \item Model nature is visible in predictions:
+            \begin{itemize}
+                \item[-] Decision tree predicts conservative smooth surfaces
+                \item[-] K-nearest neighbours predicts noisy erratic changes resembling the training data
+            \end{itemize}
+
+            \item Time-series forecasting is extrapolation
+
+            \item Model selection can improve $E_{out}$ by reducing or increasing model complexity
+
+            \item Data preprocessing and feature selection is important and can be guided also by cross-validation
         \end{itemize}
-
-        Time-series forecasting is extrapolation
-
-        Model selection can improve $E_{out}$ by reducing or increasing model complexity
-
-        Data preprocessing and feature selection is important and can be guided also by cross-validation
     \end{frame}
 
 \end{document}

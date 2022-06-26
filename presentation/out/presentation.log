@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Arch Linux)  (format=lualatex 2022.6.14)  23 JUN 2022 16:44
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Arch Linux)  (format=lualatex 2022.6.14)  25 JUN 2022 12:08
  restricted system commands enabled.
  file:line:error style messages enabled.
 **presentation.tex
@@ -1342,10 +1342,10 @@ Overfull \vbox (12.2273pt too high) detected at line 82
 <images/boundaries.png, id=95, 1033.8625pt x 837.1275pt>
 File: images/boundaries.png Graphic file (type png)
 <use images/boundaries.png>
-Package luatex.def Info: images/boundaries.png  used on input line 100.
+Package luatex.def Info: images/boundaries.png  used on input line 101.
 (luatex.def)             Requested size: 274.72948pt x 222.46103pt.
 
-Overfull \vbox (5.08034pt too high) detected at line 100
+Overfull \vbox (13.08034pt too high) detected at line 101
  []
 
 [8
@@ -1354,7 +1354,7 @@ Overfull \vbox (5.08034pt too high) detected at line 100
 <images/moon_data.png, id=104, 710.655pt x 435.6275pt>
 File: images/moon_data.png Graphic file (type png)
 <use images/moon_data.png>
-Package luatex.def Info: images/moon_data.png  used on input line 107.
+Package luatex.def Info: images/moon_data.png  used on input line 109.
 (luatex.def)             Requested size: 307.28987pt x 188.37306pt.
  [9
 
@@ -1362,7 +1362,7 @@ Package luatex.def Info: images/moon_data.png  used on input line 107.
 <images/circles_label.png, id=113, 710.655pt x 435.6275pt>
 File: images/circles_label.png Graphic file (type png)
 <use images/circles_label.png>
-Package luatex.def Info: images/circles_label.png  used on input line 114.
+Package luatex.def Info: images/circles_label.png  used on input line 117.
 (luatex.def)             Requested size: 307.28987pt x 188.37306pt.
  [10
 
@@ -1370,7 +1370,7 @@ Package luatex.def Info: images/circles_label.png  used on input line 114.
 <images/moon_combined.png, id=122, 710.655pt x 435.6275pt>
 File: images/moon_combined.png Graphic file (type png)
 <use images/moon_combined.png>
-Package luatex.def Info: images/moon_combined.png  used on input line 121.
+Package luatex.def Info: images/moon_combined.png  used on input line 125.
 (luatex.def)             Requested size: 307.28987pt x 188.37306pt.
  [11
 
@@ -1390,7 +1390,7 @@ Package luatex.def Info: images/moon_combined.png  used on input line 121.
 <images/validation.png, id=178, 604.2575pt x 277.035pt>
 File: images/validation.png Graphic file (type png)
 <use images/validation.png>
-Package luatex.def Info: images/validation.png  used on input line 184.
+Package luatex.def Info: images/validation.png  used on input line 191.
 (luatex.def)             Requested size: 307.28987pt x 140.88438pt.
 
 [18
@@ -1399,7 +1399,7 @@ Package luatex.def Info: images/validation.png  used on input line 184.
 <images/full.png, id=186, 1168.365pt x 606.265pt>
 File: images/full.png Graphic file (type png)
 <use images/full.png>
-Package luatex.def Info: images/full.png  used on input line 192.
+Package luatex.def Info: images/full.png  used on input line 200.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
  [19
 
@@ -1407,7 +1407,7 @@ Package luatex.def Info: images/full.png  used on input line 192.
 <images/baseline_tree.png, id=195, 1168.365pt x 606.265pt>
 File: images/baseline_tree.png Graphic file (type png)
 <use images/baseline_tree.png>
-Package luatex.def Info: images/baseline_tree.png  used on input line 207.
+Package luatex.def Info: images/baseline_tree.png  used on input line 216.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
 
 Package fontspec Info: Font family 'FiraSansLight(1)' created for font 'Fira
@@ -1444,31 +1444,47 @@ tlig;+tnum;"
 (fontspec)             <->"FiraSansItalic:mode=node;script=latn;language=dflt;+
 tlig;+tnum;+smcp;"
 
- [20
+
+Overfull \vbox (5.94164pt too high) detected at line 216
+ []
+
+[20
 
 <./images/baseline_tree.png>]
 <images/tuned_tree.png, id=204, 1168.365pt x 606.265pt>
 File: images/tuned_tree.png Graphic file (type png)
 <use images/tuned_tree.png>
-Package luatex.def Info: images/tuned_tree.png  used on input line 222.
+Package luatex.def Info: images/tuned_tree.png  used on input line 232.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
- [21
+
+Overfull \vbox (5.94164pt too high) detected at line 232
+ []
+
+[21
 
 <./images/tuned_tree.png>]
 <images/baseline_k.png, id=214, 1168.365pt x 606.265pt>
 File: images/baseline_k.png Graphic file (type png)
 <use images/baseline_k.png>
-Package luatex.def Info: images/baseline_k.png  used on input line 237.
+Package luatex.def Info: images/baseline_k.png  used on input line 248.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
- [22
+
+Overfull \vbox (5.94164pt too high) detected at line 248
+ []
+
+[22
 
 <./images/baseline_k.png>]
 <images/tuned_k.png, id=223, 1168.365pt x 606.265pt>
 File: images/tuned_k.png Graphic file (type png)
 <use images/tuned_k.png>
-Package luatex.def Info: images/tuned_k.png  used on input line 253.
+Package luatex.def Info: images/tuned_k.png  used on input line 265.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
- [23
+
+Overfull \vbox (5.94164pt too high) detected at line 265
+ []
+
+[23
 
 <./images/tuned_k.png>] [24
 
@@ -1484,18 +1500,18 @@ Package luatex.def Info: images/tuned_k.png  used on input line 253.
 \openout8 = presentation.snm
  (./out/presentation.aux)
 Package rerunfilecheck Info: File `presentation.out' has not changed.
-(rerunfilecheck)             Checksum: 907A9C03FD027919633CC2993FD5A32C;914.
+(rerunfilecheck)             Checksum: 1FD352D1DFF68617FD4576E8BF79470F;914.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31843 strings out of 477762
+ 31870 strings out of 477762
  125031,1144653 words of node,token memory allocated
- 6697 words of node memory still in use:
-   42 hlist, 8 vlist, 5 rule, 52 disc, 8 local_par, 2 math, 129 glue, 99 kern, 2
-4 penalty, 456 glyph, 89 attribute, 70 glue_spec, 89 attribute_list, 4 write, 3 
-pdf_action, 26 pdf_colorstack nodes
-   avail lists: 2:409,3:197,4:208,5:235,6:24,7:1278,8:28,9:355,10:14,11:107
- 50946 multiletter control sequences out of 65536+600000
+ 7451 words of node memory still in use:
+   53 hlist, 8 vlist, 5 rule, 52 disc, 8 local_par, 2 math, 170 glue, 104 kern, 
+36 penalty, 461 glyph, 135 attribute, 70 glue_spec, 135 attribute_list, 4 write,
+ 3 pdf_action, 48 pdf_colorstack nodes
+   avail lists: 2:317,3:185,4:187,5:245,6:24,7:1370,8:28,9:344,10:14,11:107
+ 50973 multiletter control sequences out of 65536+600000
  105 fonts using 22894887 bytes
  128i,13n,131p,1810b,790s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/fonts/TTF/FiraSans-LightItalic.ttf></usr/share/fonts/TTF/FiraSans-Li
@@ -1506,7 +1522,7 @@ sfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
 texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
 s/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/a
 msfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (24 pages, 974218 bytes).
+Output written on presentation.pdf (24 pages, 974336 bytes).
 
 PDF statistics: 287 PDF objects out of 1000 (max. 8388607)
  213 compressed objects within 3 object streams
