@@ -43,6 +43,83 @@ We've seen SVM tries to fit the best line that seperates the data, but if the da
 **Question**: *How do they compare, given non linear synthetic data?*
 
 .. in terms of how well replicate 
+$$
+\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\mathbf{x_n}^T \mathbf{x}_m
+$$
+
+$$
+\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\Phi(\mathbf{x_n})^T \Phi( \mathbf{x}_m)
+$$
+
+$$
+\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m K( \mathbf{x_n} , \mathbf{x}_m)
+$$
+
+
+$$
+\frac{1}{2}\mathbf{w}^T\mathbf{w} + \text{C} \sum_{n=1}^{N} \zeta_n
+$$
+
+
+**Kernels**:
+$$
+K(\mathbf{x}, \mathbf{x}') = \mathbf{x}^T \mathbf{x}'
+$$
+Polynomial kernel:
+
+
+$$
+K(\mathbf{x}, \mathbf{x}')=(1 + \gamma (\mathbf{x}^T\mathbf{x}'))^Q
+$$
+
+Radial basis function:
+$$
+K(\mathbf{x}, \mathbf{x}') = e^{-\gamma \mid\mid \mathbf{x}-\mathbf{x}' \mid\mid^2}
+$$
+
+
+
+
+
+
+
+
+**Kernels**:
+$$
+\mathbf{x}^T \mathbf{x}'
+$$
+Polynomial kernel:
+
+
+$$
+(1 + \gamma (\mathbf{x}^T\mathbf{x}'))^Q
+$$
+
+Radial basis function:
+$$
+e^{-\gamma \mid\mid \mathbf{x}-\mathbf{x}' \mid\mid^2}
+$$
+
+
+**errs:**
+
+$E_{\text{test}}^{\text{linear}}$ = $0.22$
+
+  
+
+$E_{\text{test}}^{\text{poly-30degr}}$ = $0.54$
+
+  
+
+$E_{\text{test}}^{\text{RBF}}$ = $0.013$
+$$
+\mathbb{E}[E_{out}^{\text{RBF}}] \le \frac{\mathbb{E}[\text{\# of SVs}]}{\text{N} - 1} = 0.019
+$$
+
+
+
+
+
 
 ---
 
