@@ -1,26 +1,3 @@
-Your project will be evaluated based on the Python notebook you submit and the 10 minute presentation you give at a time slot during the exam period. Your work will be evaluated based on the originality and motivation of the research questions, the rigour with which you setup your experiments, the quality of your report and visualisations, and the description of the machine learning algorithms you used. You will also be evaluated on your presentation, taking into account the clarity, correctness of your presentation, and your ability to answer our questions after the presentation.
-
-
-
-
-
--------
-
-`[title slide]`
-
-SVM Kernels:
-
-- Linear  
-- vs polynomial kernel  
-- vs RBF kernel
-
-
-
-**Question**: *How do they compare, given non linear synthetic data?*
-
-
-
-
 
 ---
 
@@ -34,18 +11,11 @@ We've seen SVM tries to fit the best line that seperates the data, but if the da
 
 **[explain why kernels, what they do, the data set we use]**
 
-
-
-
-
-
-
 **Question**: *How do they compare, given non linear synthetic data?*
 
-.. in terms of how well replicate 
-$$
-\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\mathbf{x_n}^T \mathbf{x}_m
-$$
+... in terms of how well replicate 
+
+$\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\mathbf{x_n}^T \mathbf{x}_m$
 
 $$
 \mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\Phi(\mathbf{x_n})^T \Phi( \mathbf{x}_m)

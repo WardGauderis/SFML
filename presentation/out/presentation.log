@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Arch Linux)  (format=lualatex 2022.6.14)  25 JUN 2022 12:08
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Arch Linux)  (format=lualatex 2022.6.14)  26 JUN 2022 13:48
  restricted system commands enabled.
  file:line:error style messages enabled.
 **presentation.tex
@@ -1041,31 +1041,31 @@ Space,BoldFont={Fira
 (./out/presentation.aux)
 \openout1 = presentation.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 29.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 2
-7.
+9.
  (/usr/share/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: luatex
@@ -1123,7 +1123,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 29.
 
 (/usr/share/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
@@ -1136,68 +1136,68 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count381
 )
-LaTeX Info: Redefining \ref on input line 27.
-LaTeX Info: Redefining \pageref on input line 27.
-LaTeX Info: Redefining \nameref on input line 27.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
 
 (./out/presentation.out) (./out/presentation.out)
 \@outlinefile=\write5
 
 \openout5 = presentation.out
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 27.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 27.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/b/n on input line 29.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 27.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
 (Font)                  OT1/cmr/bx/n --> TU/FiraSansLight(0)/b/n on input line 
-27.
+29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  OT1/cmr/bx/n --> TU/FiraSansLight(0)/b/n on input line 
-27.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 27.
+29.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  OT1/cmss/m/n --> TU/FiraSansLight(0)/m/n on input line 
-27.
+29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  OT1/cmss/bx/n --> TU/FiraSansLight(0)/m/n on input line
- 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 27.
+ 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  OT1/cmr/m/it --> TU/FiraSansLight(0)/m/it on input line
- 27.
+ 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/FiraSansLight(0)/m/it on input lin
-e 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 27.
+e 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> TU/FiraMono(0)/m/n on input line 27.
+(Font)                  OT1/cmtt/m/n --> TU/FiraMono(0)/m/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> TU/FiraMono(0)/m/n on input line 27.
+(Font)                  OT1/cmtt/m/n --> TU/FiraMono(0)/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
 (Font)                  TU/FiraSansLight(0)/m/n --> TU/FiraSansLight(0)/b/n on 
-input line 27.
+input line 29.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  TU/FiraSansLight(0)/m/it --> TU/FiraSansLight(0)/b/it o
-n input line 27.
+n input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/b/n --> TU/lmr/b/n on input line 27.
+(Font)                  OT1/cmss/b/n --> TU/lmr/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
 (Font)                  TU/FiraSansLight(0)/b/n --> TU/FiraSansLight(0)/b/n on 
-input line 27.
+input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  TU/FiraSansLight(0)/m/n --> TU/FiraSansLight(0)/b/n on 
-input line 27.
+input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  TU/FiraSansLight(0)/m/it --> TU/FiraSansLight(0)/b/it o
-n input line 27.
+n input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  TU/FiraMono(0)/m/n --> TU/FiraMono(0)/b/n on input line
- 27.
+ 29.
 
 (/usr/share/texmf-dist/tex/latex/translator/translator-basic-dictionary-English
 .dict
@@ -1229,68 +1229,68 @@ Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 
 \symlegacymaths=\mathgroup8
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 27.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 27.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 27.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 27.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 27.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 27.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 27.
-LaTeX Font Info:    Redeclaring math accent \check on input line 27.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 27.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 27.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 27.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 27.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 27.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 29.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 29.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 29.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 29.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 29.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 29.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 29.
+LaTeX Font Info:    Redeclaring math accent \check on input line 29.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 29.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 29.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 29.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 29.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 27.
+(Font)              `operators' in the math version `normal' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 27.
+(Font)                  OT1/cmss/m/n --> TU/lmr/m/n on input line 29.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 27.
+(Font)              `operators' in the math version `bold' on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/b/n --> TU/lmr/m/n on input line 27.
+(Font)                  OT1/cmss/b/n --> TU/lmr/m/n on input line 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 27.
-LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 27.
+(Font)                  TU/lmr/m/n --> TU/lmr/m/n on input line 29.
+LaTeX Font Info:    Redeclaring math alphabet \mathrm on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
 (Font)                  TU/FiraSansLight(0)/m/it --> TU/lmr/m/it on input line 
-27.
+29.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  TU/FiraSansLight(0)/b/n --> TU/lmr/b/n on input line 27
+(Font)                  TU/FiraSansLight(0)/b/n --> TU/lmr/b/n on input line 29
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
 (Font)                  TU/FiraSansLight(0)/m/n --> TU/FiraSansLight(0)/m/n on 
-input line 27.
+input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  TU/FiraMono(0)/m/n --> TU/FiraMono(0)/m/n on input line
- 27.
+ 29.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 27.
+(Font)                  TU/lmr/m/n --> TU/lmr/b/n on input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  TU/FiraSansLight(0)/b/it --> TU/lmr/b/it on input line 
-27.
+29.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
 (Font)                  TU/FiraSansLight(0)/b/n --> TU/FiraSansLight(0)/b/n on 
-input line 27.
+input line 29.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  TU/FiraMono(0)/b/n --> TU/FiraMono(0)/b/n on input line
- 27.
+ 29.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
  (./out/presentation.nav)
-Overfull \vbox (15.63992pt too high) detected at line 28
+Overfull \vbox (15.63992pt too high) detected at line 30
  []
 
 [1
@@ -1299,12 +1299,12 @@ Overfull \vbox (15.63992pt too high) detected at line 28
 2
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
 
  (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
 
 
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsb.fd
@@ -1317,21 +1317,21 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <images/moons.png, id=63, 235.88126pt x 235.88126pt>
 File: images/moons.png Graphic file (type png)
 <use images/moons.png>
-Package luatex.def Info: images/moons.png  used on input line 64.
+Package luatex.def Info: images/moons.png  used on input line 66.
 (luatex.def)             Requested size: 107.55098pt x 107.55289pt.
 <images/circles.png, id=64, 235.88126pt x 235.88126pt>
 File: images/circles.png Graphic file (type png)
 <use images/circles.png>
-Package luatex.def Info: images/circles.png  used on input line 64.
+Package luatex.def Info: images/circles.png  used on input line 66.
 (luatex.def)             Requested size: 107.55098pt x 107.55289pt.
 
-Overfull \vbox (1.63899pt too high) detected at line 64
+Overfull \vbox (1.63899pt too high) detected at line 66
  []
 
 [5
 
 <./images/moons.png><./images/circles.png>]
-Overfull \vbox (12.2273pt too high) detected at line 82
+Overfull \vbox (12.2273pt too high) detected at line 84
  []
 
 [6
@@ -1342,10 +1342,10 @@ Overfull \vbox (12.2273pt too high) detected at line 82
 <images/boundaries.png, id=95, 1033.8625pt x 837.1275pt>
 File: images/boundaries.png Graphic file (type png)
 <use images/boundaries.png>
-Package luatex.def Info: images/boundaries.png  used on input line 101.
+Package luatex.def Info: images/boundaries.png  used on input line 103.
 (luatex.def)             Requested size: 274.72948pt x 222.46103pt.
 
-Overfull \vbox (13.08034pt too high) detected at line 101
+Overfull \vbox (13.08034pt too high) detected at line 103
  []
 
 [8
@@ -1354,7 +1354,7 @@ Overfull \vbox (13.08034pt too high) detected at line 101
 <images/moon_data.png, id=104, 710.655pt x 435.6275pt>
 File: images/moon_data.png Graphic file (type png)
 <use images/moon_data.png>
-Package luatex.def Info: images/moon_data.png  used on input line 109.
+Package luatex.def Info: images/moon_data.png  used on input line 111.
 (luatex.def)             Requested size: 307.28987pt x 188.37306pt.
  [9
 
@@ -1362,7 +1362,7 @@ Package luatex.def Info: images/moon_data.png  used on input line 109.
 <images/circles_label.png, id=113, 710.655pt x 435.6275pt>
 File: images/circles_label.png Graphic file (type png)
 <use images/circles_label.png>
-Package luatex.def Info: images/circles_label.png  used on input line 117.
+Package luatex.def Info: images/circles_label.png  used on input line 119.
 (luatex.def)             Requested size: 307.28987pt x 188.37306pt.
  [10
 
@@ -1370,7 +1370,7 @@ Package luatex.def Info: images/circles_label.png  used on input line 117.
 <images/moon_combined.png, id=122, 710.655pt x 435.6275pt>
 File: images/moon_combined.png Graphic file (type png)
 <use images/moon_combined.png>
-Package luatex.def Info: images/moon_combined.png  used on input line 125.
+Package luatex.def Info: images/moon_combined.png  used on input line 127.
 (luatex.def)             Requested size: 307.28987pt x 188.37306pt.
  [11
 
@@ -1380,34 +1380,435 @@ Package luatex.def Info: images/moon_combined.png  used on input line 125.
 
 ] [14
 
-] [15
+]
+<images/before.png, id=155, 1341.01pt x 863.225pt>
+File: images/before.png Graphic file (type png)
+<use images/before.png>
+Package luatex.def Info: images/before.png  used on input line 180.
+(luatex.def)             Requested size: 138.2795pt x 89.00142pt.
 
-] [16
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 180--180
+ [] 
+ []
 
-] [17
+<images/after.png, id=156, 487.8225pt x 203.25937pt>
+File: images/after.png Graphic file (type png)
+<use images/after.png>
+Package luatex.def Info: images/after.png  used on input line 180.
+(luatex.def)             Requested size: 138.2795pt x 57.61626pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 180--180
+ [] 
+ []
+
+
+Overfull \hbox (19.40044pt too wide) detected at line 180
+\OMS/cmsy/m/n/6 L\OT1/cmr/m/n/6 (\OML/cmm/m/it/6 \OT1/cmr/m/n/6 ) = [] \OML/cm
+m/m/it/6 [] \OMS/cmsy/m/n/6 ^^@ [] [] [] \TU/FiraSansLight(0)/m/it/6 y[]y[]\OM
+L/cmm/m/it/6 [][]\OT1/cmr/m/n/6 ([])[](\TU/lmr/b/n/6 x[]\OT1/cmr/m/n/6 )
+ []
+
+[15
+
+<./images/before.png><./images/after.png>]
+File: images/before.png Graphic file (type png)
+<use images/before.png>
+Package luatex.def Info: images/before.png  used on input line 206.
+(luatex.def)             Requested size: 138.2795pt x 89.00142pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 206--206
+ [] 
+ []
+
+File: images/after.png Graphic file (type png)
+<use images/after.png>
+Package luatex.def Info: images/after.png  used on input line 206.
+(luatex.def)             Requested size: 138.2795pt x 57.61626pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 206--206
+ [] 
+ []
+
+
+Overfull \hbox (7.06691pt too wide) detected at line 206
+\OMS/cmsy/m/n/6 L\OT1/cmr/m/n/6 (\OML/cmm/m/it/6 \OT1/cmr/m/n/6 ) = [] \OML/cm
+m/m/it/6 [] \OMS/cmsy/m/n/6 ^^@ [] [] [] \TU/FiraSansLight(0)/m/it/6 y[]y[]\OM
+L/cmm/m/it/6 [][]\TU/FiraSansLight(0)/m/it/6 K\OT1/cmr/m/n/6 ([]\OML/cmm/m/it
+/6 ; \TU/lmr/b/n/6 x[]\OT1/cmr/m/n/6 )
+ []
+
+[16
 
 ]
-<images/validation.png, id=178, 604.2575pt x 277.035pt>
+\openout4 = presentation.vrb
+ (./out/presentation.vrb
+File: images/before.png Graphic file (type png)
+<use images/before.png>
+Package luatex.def Info: images/before.png  used on input line 6.
+(luatex.def)             Requested size: 82.96957pt x 53.39821pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 6--7
+ [] 
+ []
+
+<images/train.png, id=178, 3485.02pt x 2264.46pt>
+File: images/train.png Graphic file (type png)
+<use images/train.png>
+Package luatex.def Info: images/train.png  used on input line 14.
+(luatex.def)             Requested size: 82.96957pt x 53.90242pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 14--15
+ [] 
+ []
+
+<images/test.png, id=179, 3472.975pt x 2252.415pt>
+File: images/test.png Graphic file (type png)
+<use images/test.png>
+Package luatex.def Info: images/test.png  used on input line 22.
+(luatex.def)             Requested size: 82.96957pt x 53.78754pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 22--23
+ [] 
+ []
+
+
+Overfull \hbox (3.08055pt too wide) detected at line 24
+[][]$[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][]
+[][][][] $[]$[][][][][][]
+ []
+
+
+Overfull \hbox (62.61237pt too wide) in paragraph at lines 37--37
+[]\TU/FiraMono(0)/m/n/6 > linear = svm.SVC(kernel='linear', C=1000)[] 
+ []
+
+
+Overfull \hbox (44.61234pt too wide) in paragraph at lines 37--37
+[]\TU/FiraMono(0)/m/n/6 > linear = model.fit(X_train, y_train)[] 
+ []
+
+./out/presentation.vrb:42: Missing $ inserted.
+<inserted text> 
+$
+l.42             \frac{1}{2}
+                          \mathbf{w}^T\mathbf{w} + \text{C} \sum_{n=1}^{N} \...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./out/presentation.vrb:42: Extra }, or forgotten $.
+\frac  ...ck {\begingroup #1\endgroup \@@over #2}}
+                                                  
+l.42             \frac{1}{2}
+                          \mathbf{w}^T\mathbf{w} + \text{C} \sum_{n=1}^{N} \...
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+./out/presentation.vrb:43: Missing $ inserted.
+<inserted text> 
+$
+l.43         \end{columns}
+                        
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+./out/presentation.vrb:43: Missing } inserted.
+<inserted text> 
+}
+l.43         \end{columns}
+                        
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) [17
+
+<./images/train.png><./images/test.png>]
+\openout4 = presentation.vrb
+ (./out/presentation.vrb
+<image-20220624192228376.png, id=191, 514.92375pt x 332.24126pt>
+File: image-20220624192228376.png Graphic file (type png)
+<use image-20220624192228376.png>
+Package luatex.def Info: image-20220624192228376.png  used on input line 10.
+(luatex.def)             Requested size: 101.40622pt x 65.42809pt.
+<image-20220624192244841.png, id=192, 512.91624pt x 332.24126pt>
+File: image-20220624192244841.png Graphic file (type png)
+<use image-20220624192244841.png>
+Package luatex.def Info: image-20220624192244841.png  used on input line 18.
+(luatex.def)             Requested size: 101.40622pt x 65.68156pt.
+<image-20220624192258535.png, id=193, 515.9275pt x 331.2375pt>
+File: image-20220624192258535.png Graphic file (type png)
+<use image-20220624192258535.png>
+Package luatex.def Info: image-20220624192258535.png  used on input line 26.
+(luatex.def)             Requested size: 101.40622pt x 65.10405pt.
+) [18
+
+<./image-20220624192228376.png><./image-20220624192244841.png><./image-202206241
+92258535.png>]
+\openout4 = presentation.vrb
+ (./out/presentation.vrb
+File: image-20220624192228376.png Graphic file (type png)
+<use image-20220624192228376.png>
+Package luatex.def Info: image-20220624192228376.png  used on input line 10.
+(luatex.def)             Requested size: 101.40622pt x 65.42809pt.
+File: image-20220624192244841.png Graphic file (type png)
+<use image-20220624192244841.png>
+Package luatex.def Info: image-20220624192244841.png  used on input line 17.
+(luatex.def)             Requested size: 101.40622pt x 65.68156pt.
+File: image-20220624192258535.png Graphic file (type png)
+<use image-20220624192258535.png>
+Package luatex.def Info: image-20220624192258535.png  used on input line 24.
+(luatex.def)             Requested size: 101.40622pt x 65.10405pt.
+) [19
+
+]
+\openout4 = presentation.vrb
+ (./out/presentation.vrb
+<images/3.png, id=209, 533.74406pt x 342.5297pt>
+File: images/3.png Graphic file (type png)
+<use images/3.png>
+Package luatex.def Info: images/3.png  used on input line 8.
+(luatex.def)             Requested size: 101.40622pt x 65.07608pt.
+<images/5.png, id=210, 549.55313pt x 354.57469pt>
+File: images/5.png Graphic file (type png)
+<use images/5.png>
+Package luatex.def Info: images/5.png  used on input line 15.
+(luatex.def)             Requested size: 101.40622pt x 65.42757pt.
+<images/10.png, id=211, 530.73282pt x 342.5297pt>
+File: images/10.png Graphic file (type png)
+<use images/10.png>
+Package luatex.def Info: images/10.png  used on input line 22.
+(luatex.def)             Requested size: 101.40622pt x 65.44194pt.
+<images/15.png, id=212, 531.48563pt x 342.5297pt>
+File: images/15.png Graphic file (type png)
+<use images/15.png>
+Package luatex.def Info: images/15.png  used on input line 32.
+(luatex.def)             Requested size: 101.40622pt x 65.35309pt.
+<images/20.png, id=213, 531.48563pt x 344.03531pt>
+File: images/20.png Graphic file (type png)
+<use images/20.png>
+Package luatex.def Info: images/20.png  used on input line 39.
+(luatex.def)             Requested size: 101.40622pt x 65.64037pt.
+<images/30.png, id=214, 531.48563pt x 342.5297pt>
+File: images/30.png Graphic file (type png)
+<use images/30.png>
+Package luatex.def Info: images/30.png  used on input line 46.
+(luatex.def)             Requested size: 101.40622pt x 65.35309pt.
+) [20
+
+<./images/3.png><./images/5.png><./images/10.png><./images/15.png><./images/20.p
+ng><./images/30.png>]
+./presentation.tex:423: Illegal parameter number in definition of \iterate.
+<to be read again> 
+S
+l.423     \end{frame}
+                   
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./presentation.tex:423: Illegal parameter number in definition of \iterate.
+<to be read again> 
+S
+l.423     \end{frame}
+                   
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./presentation.tex:423: Illegal parameter number in definition of \iterate.
+<to be read again> 
+S
+l.423     \end{frame}
+                   
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./presentation.tex:423: Illegal parameter number in definition of \iterate.
+<to be read again> 
+S
+l.423     \end{frame}
+                   
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./presentation.tex:423: Illegal parameter number in definition of \iterate.
+<to be read again> 
+S
+l.423     \end{frame}
+                   
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./presentation.tex:423: Illegal parameter number in definition of \iterate.
+<to be read again> 
+S
+l.423     \end{frame}
+                   
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./presentation.tex:423: Illegal parameter number in definition of \beamer@doifi
+nframe.
+<to be read again> 
+S
+l.423     \end{frame}
+                   
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./presentation.tex:423: Illegal parameter number in definition of \beamer@doifi
+nframe.
+<to be read again> 
+S
+l.423     \end{frame}
+                   
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+./presentation.tex:423: Illegal parameter number in definition of \beamer@doifi
+nframe.
+<to be read again> 
+S
+l.423     \end{frame}
+                   
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+File: image-20220624192228376.png Graphic file (type png)
+<use image-20220624192228376.png>
+Package luatex.def Info: image-20220624192228376.png  used on input line 423.
+(luatex.def)             Requested size: 101.40622pt x 65.42809pt.
+./presentation.tex:423: You can't use `macro parameter character #' in horizonta
+l mode.
+\beamer@doifinframe ...\text {linear}} = 0.22\] ##
+                                                  SV’s: 371/800 \column {0...
+l.423     \end{frame}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+File: images/30.png Graphic file (type png)
+<use images/30.png>
+Package luatex.def Info: images/30.png  used on input line 423.
+(luatex.def)             Requested size: 101.40622pt x 65.35309pt.
+./presentation.tex:423: You can't use `macro parameter character #' in horizonta
+l mode.
+\beamer@doifinframe ... {poly-30degr}} = 0.54\] ##
+                                                  SV’s: 492/800 \column {0...
+l.423     \end{frame}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+File: image-20220624192258535.png Graphic file (type png)
+<use image-20220624192258535.png>
+Package luatex.def Info: image-20220624192258535.png  used on input line 423.
+(luatex.def)             Requested size: 101.40622pt x 65.10405pt.
+./presentation.tex:423: You can't use `macro parameter character #' in horizonta
+l mode.
+\beamer@doifinframe ...^{\text {RBF}} = 0.013\] ##
+                                                  SV’s: 15/800 \end {colum...
+l.423     \end{frame}
+                   
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+[21
+
+] [22
+
+] [23
+
+]
+<images/DT1.png, id=251, 716.6775pt x 359.84438pt>
+File: images/DT1.png Graphic file (type png)
+<use images/DT1.png>
+Package luatex.def Info: images/DT1.png  used on input line 449.
+(luatex.def)             Requested size: 185.90906pt x 93.34319pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 449--449
+ [] 
+ []
+
+<images/DT2.png, id=252, 726.46407pt x 630.85687pt>
+File: images/DT2.png Graphic file (type png)
+<use images/DT2.png>
+Package luatex.def Info: images/DT2.png  used on input line 449.
+(luatex.def)             Requested size: 107.55333pt x 93.3923pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 449--449
+ [] 
+ []
+
+[24
+
+<./images/DT1.png><./images/DT2.png>]
+<images/k.png, id=262, 406.51875pt x 347.2975pt>
+File: images/k.png Graphic file (type png)
+<use images/k.png>
+Package luatex.def Info: images/k.png  used on input line 464.
+(luatex.def)             Requested size: 138.2795pt x 118.13257pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 464--464
+ [] 
+ []
+
+[25
+
+<./images/k.png>]
+<images/table.png, id=271, 1081.03876pt x 252.945pt>
+File: images/table.png Graphic file (type png)
+<use images/table.png>
+Package luatex.def Info: images/table.png  used on input line 476.
+(luatex.def)             Requested size: 307.28987pt x 71.90094pt.
+
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 476--476
+ [] 
+ []
+
+[26
+
+<./images/table.png>] [27
+
+]
+<images/validation.png, id=288, 604.2575pt x 277.035pt>
 File: images/validation.png Graphic file (type png)
 <use images/validation.png>
-Package luatex.def Info: images/validation.png  used on input line 191.
+Package luatex.def Info: images/validation.png  used on input line 512.
 (luatex.def)             Requested size: 307.28987pt x 140.88438pt.
-
-[18
+ [28
 
 <./images/validation.png>]
-<images/full.png, id=186, 1168.365pt x 606.265pt>
+<images/full.png, id=296, 1168.365pt x 606.265pt>
 File: images/full.png Graphic file (type png)
 <use images/full.png>
-Package luatex.def Info: images/full.png  used on input line 200.
+Package luatex.def Info: images/full.png  used on input line 521.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
- [19
+ [29
 
 <./images/full.png>]
-<images/baseline_tree.png, id=195, 1168.365pt x 606.265pt>
+<images/baseline_tree.png, id=305, 1168.365pt x 606.265pt>
 File: images/baseline_tree.png Graphic file (type png)
 <use images/baseline_tree.png>
-Package luatex.def Info: images/baseline_tree.png  used on input line 216.
+Package luatex.def Info: images/baseline_tree.png  used on input line 537.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
 
 Package fontspec Info: Font family 'FiraSansLight(1)' created for font 'Fira
@@ -1445,48 +1846,48 @@ tlig;+tnum;"
 tlig;+tnum;+smcp;"
 
 
-Overfull \vbox (5.94164pt too high) detected at line 216
+Overfull \vbox (5.94164pt too high) detected at line 537
  []
 
-[20
+[30
 
 <./images/baseline_tree.png>]
-<images/tuned_tree.png, id=204, 1168.365pt x 606.265pt>
+<images/tuned_tree.png, id=314, 1168.365pt x 606.265pt>
 File: images/tuned_tree.png Graphic file (type png)
 <use images/tuned_tree.png>
-Package luatex.def Info: images/tuned_tree.png  used on input line 232.
+Package luatex.def Info: images/tuned_tree.png  used on input line 553.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
 
-Overfull \vbox (5.94164pt too high) detected at line 232
+Overfull \vbox (5.94164pt too high) detected at line 553
  []
 
-[21
+[31
 
 <./images/tuned_tree.png>]
-<images/baseline_k.png, id=214, 1168.365pt x 606.265pt>
+<images/baseline_k.png, id=325, 1168.365pt x 606.265pt>
 File: images/baseline_k.png Graphic file (type png)
 <use images/baseline_k.png>
-Package luatex.def Info: images/baseline_k.png  used on input line 248.
+Package luatex.def Info: images/baseline_k.png  used on input line 569.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
 
-Overfull \vbox (5.94164pt too high) detected at line 248
+Overfull \vbox (5.94164pt too high) detected at line 569
  []
 
-[22
+[32
 
 <./images/baseline_k.png>]
-<images/tuned_k.png, id=223, 1168.365pt x 606.265pt>
+<images/tuned_k.png, id=334, 1168.365pt x 606.265pt>
 File: images/tuned_k.png Graphic file (type png)
 <use images/tuned_k.png>
-Package luatex.def Info: images/tuned_k.png  used on input line 265.
+Package luatex.def Info: images/tuned_k.png  used on input line 586.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
 
-Overfull \vbox (5.94164pt too high) detected at line 265
+Overfull \vbox (5.94164pt too high) detected at line 586
  []
 
-[23
+[33
 
-<./images/tuned_k.png>] [24
+<./images/tuned_k.png>] [34
 
 ]
 \tf@nav=\write6
@@ -1504,28 +1905,38 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 31870 strings out of 477762
+ 32362 strings out of 477762
  125031,1144653 words of node,token memory allocated
- 7451 words of node memory still in use:
+ 7511 words of node memory still in use:
    53 hlist, 8 vlist, 5 rule, 52 disc, 8 local_par, 2 math, 170 glue, 104 kern, 
-36 penalty, 461 glyph, 135 attribute, 70 glue_spec, 135 attribute_list, 4 write,
+36 penalty, 461 glyph, 150 attribute, 70 glue_spec, 150 attribute_list, 4 write,
  3 pdf_action, 48 pdf_colorstack nodes
-   avail lists: 2:317,3:185,4:187,5:245,6:24,7:1370,8:28,9:344,10:14,11:107
- 50973 multiletter control sequences out of 65536+600000
- 105 fonts using 22894887 bytes
- 128i,13n,131p,1810b,790s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/fonts/TTF/FiraSans-LightItalic.ttf></usr/share/fonts/TTF/FiraSans-Li
-ght.ttf></usr/share/fonts/TTF/FiraSans-Regular.ttf></usr/share/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/a
-msfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (24 pages, 974336 bytes).
+   avail lists: 1:1,2:799,3:572,4:192,5:245,6:70,7:1370,8:37,9:563,10:14,11:107
+ 51199 multiletter control sequences out of 65536+600000
+ 132 fonts using 26817519 bytes
+ 128i,16n,131p,1810b,920s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/opentype/public/fira/FiraMono-Regular.otf></usr/sha
+re/texmf-dist/fonts/opentype/public/lm/lmromandemi10-regular.otf></usr/share/fon
+ts/TTF/FiraSans-LightItalic.ttf></usr/share/fonts/TTF/FiraSans-Light.ttf></usr/s
+hare/fonts/TTF/FiraSans-Regular.ttf></usr/share/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmex10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/
+cmex7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmmi8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
+></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr6.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type
+1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
+s/symbols/msbm10.pfb>
+Output written on presentation.pdf (34 pages, 7480733 bytes).
 
-PDF statistics: 287 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 131072)
+PDF statistics: 441 PDF objects out of 1000 (max. 8388607)
+ 313 compressed objects within 4 object streams
+ 72 named destinations out of 1000 (max. 131072)
  40 words of extra memory for PDF output out of 10000 (max. 100000000)
 

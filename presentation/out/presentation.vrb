@@ -1,0 +1,49 @@
+\frametitle{Polynomial Kernel: different degrees of freedom}
+\begin{columns}[onlytextwidth]
+            \scriptsize
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/3}
+                \caption{3 degr.}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/5}
+                \caption{5 degr.}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/10}
+                \caption{10 degr.}
+            \end{figure}
+        \end{columns}
+        \begin{columns}[onlytextwidth]
+            \scriptsize
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/15}
+                \caption{15 degr.}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/20}
+                \caption{20 degr.}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/30}
+                \caption{30 degr.}
+            \end{figure}
+        \end{columns}

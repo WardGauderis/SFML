@@ -24,6 +24,8 @@
 \setlength\belowcaptionskip{0pt}
 \captionsetup{labelfont=scriptsize,labelformat=empty}
 
+\setlength{\fboxsep}{0pt}
+
 \begin{document}
     \maketitle
 
@@ -150,10 +152,329 @@
     \end{frame}
 
 
+    \begin{frame}{Why do we even need kernels?}
+        \begin{columns}[onlytextwidth]
+            \column{0.45\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/before}}
+            \end{figure}
+            \column{0.1\textwidth}
+            \LARGE
+            \[\mathbf{\xrightarrow{\phi}}\]
+            \column{0.45\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/after}}
+            \end{figure}
+        \end{columns}
+        \bigskip
+        \begin{columns}[onlytextwidth]
+            \column{0.45\textwidth}
+            \tiny
+            \[\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\mathbf{x_n}^T \mathbf{x}_m\]
+            \column{0.45\textwidth}
+            \tiny
+            \[\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\Phi(\mathbf{x_n})^T \Phi( \mathbf{x}_m)\]
+        \end{columns}
+    \end{frame}
+    \begin{frame}{Why do we even need kernels?}
+        \begin{columns}[onlytextwidth]
+            \column{0.45\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/before}}
+            \end{figure}
+            \column{0.1\textwidth}
+            \LARGE
+            \[\mathbf{\xrightarrow{\phi}}\]
+            \column{0.45\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/after}}
+            \end{figure}
+        \end{columns}
+        \bigskip
+        \begin{columns}[onlytextwidth]
+            \column{0.45\textwidth}
+            \tiny
+            \[\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m\mathbf{x_n}^T \mathbf{x}_m\]
+            \column{0.45\textwidth}
+            \tiny
+            \[\mathcal{L}(\mathbf{\alpha}) = \sum_{n=1}^{N} \alpha_n-\frac{1}{2}\sum_{n=1}^{N}\sum_{m=1}^{N} y_ny_m\alpha_n\alpha_m K( \mathbf{x_n} , \mathbf{x}_m)\]
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}[fragile]{Setup}
+        \begin{columns}[onlytextwidth]
+            \column{0.27\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/before}}
+            \end{figure}
+            \column{0.1\textwidth}
+            \LARGE
+            \[\mathbf{=}\]
+            \column{0.27\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/train}}
+            \end{figure}
+            \column{0.1\textwidth}
+            \LARGE
+            \[\mathbf{+}\]
+            \column{0.27\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/test}}
+            \end{figure}
+        \end{columns}
+
+        \vfill
+
+        \begin{columns}[onlytextwidth]
+            \column{0.3\linewidth}
+            \tiny
+            \begin{verbatim}
+> linear = svm.SVC(kernel='linear', C=1000)
+> linear = model.fit(X_train, y_train)
+
+> poly = …
+> rbf = …
+            \end{verbatim}
+            \column{0.3\linewidth}
+            \scriptsize
+            \centering
+            Soft margin constraints\\
+            \frac{1}{2}\mathbf{w}^T\mathbf{w} + \text{C} \sum_{n=1}^{N} \zeta_n
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}[fragile]{Results and Interpretation}
+        \bigskip
+        \bigskip
+        \begin{columns}[onlytextwidth]
+            \scriptsize
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{image-20220624192228376}
+                \caption{Linear}
+            \end{figure}
+            \[K(\mathbf{x}, \mathbf{x}') = \mathbf{x}^T \mathbf{x}'\]
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{image-20220624192244841}
+                \caption{Polynomial}
+            \end{figure}
+            \[K(\mathbf{x}, \mathbf{x}')=(1 + \gamma (\mathbf{x}^T\mathbf{x}'))^Q\]
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{image-20220624192258535}
+                \caption{RBF}
+            \end{figure}
+            \[K(\mathbf{x}, \mathbf{x}') = e^{-\gamma \mid\mid \mathbf{x}-\mathbf{x}' \mid\mid^2}\]
+        \end{columns}
+
+        \bigskip
+        \bigskip
+
+        \scriptsize
+        \begin{verbatim}
+            Q = 3
+            gamma = 1 / ({N_train} * X_train.var())
+        \end{verbatim}
+    \end{frame}
+
+    \begin{frame}[fragile]{Results and Interpretation}
+        \bigskip
+        \bigskip
+        \begin{columns}[onlytextwidth]
+            \scriptsize
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{image-20220624192228376}
+                \caption{Linear}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{image-20220624192244841}
+                \caption{Polynomial}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{image-20220624192258535}
+                \caption{RBF}
+            \end{figure}
+        \end{columns}
+
+        \bigskip
+        \bigskip
+
+        \centering
+        \small
+        \begin{itemize}
+            \item Difference in the flexibility between the three kernels
+            \item Only RBF can replicate the spiral shape
+        \end{itemize}
+    \end{frame}
+    \begin{frame}[fragile]{Polynomial Kernel: different degrees of freedom}
+        \begin{columns}[onlytextwidth]
+            \scriptsize
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/3}
+                \caption{3 degr.}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/5}
+                \caption{5 degr.}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/10}
+                \caption{10 degr.}
+            \end{figure}
+        \end{columns}
+        \begin{columns}[onlytextwidth]
+            \scriptsize
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/15}
+                \caption{15 degr.}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/20}
+                \caption{20 degr.}
+            \end{figure}
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/30}
+                \caption{30 degr.}
+            \end{figure}
+        \end{columns}
+    \end{frame}
+
+
+    \begin{frame}{Conclusion}
+        \bigskip
+        \bigskip
+        \begin{columns}[onlytextwidth]
+            \scriptsize
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{image-20220624192228376}
+                \caption{Linear}
+            \end{figure}
+            \[E_{\text{test}}^{\text{linear}} = 0.22\]
+            #SV’s: 371/800
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{images/30}
+                \caption{Polynomial (30 degr.)}
+            \end{figure}
+            \[E_{\text{test}}^{\text{poly-30degr}} = 0.54\]
+            #SV’s: 492/800
+            \column{0.33\textwidth}
+            \centering
+            \begin{figure}
+                \centering
+                \includegraphics[width=\linewidth]{image-20220624192258535}
+                \caption{RBF}
+            \end{figure}
+            \[E_{\text{test}}^{\text{RBF}} = 0.013\]
+            #SV’s: 15/800
+        \end{columns}
+
+        \bigskip
+        \bigskip
+
+        \small
+        \[\mathbb{E}[E_{out}] \le \frac{\mathbb{E}[\text{\# of SVs}]}{\text{N} - 1} = 0.019\]
+    \end{frame}
+
+
     \section{Decision tree and k-nearest neighbours regressor forecasting}
     \begin{frame}
         \textbf{How does the decision tree regressor model compare to the k-nearest neighbour regressor model in terms of in- and out-of-sample error for time series forecasting?}
     \end{frame}
+
+    \begin{frame}{Decision Tree Regressor}
+        \begin{itemize}
+            \item Splits data into groups
+            \item Training: searches best features/thresholds to split groups
+            \item \textbf{Model = decision tree}
+        \end{itemize}
+        \begin{columns}[onlytextwidth]
+            \column{0.605\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/DT1}}
+            \end{figure}
+            \column{0.35\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/DT2}}
+            \end{figure}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{K-Nearest Neighbour Regressor (KNN)}
+        \begin{columns}[onlytextwidth]
+            \column{0.5\textwidth}
+            \begin{itemize}
+                \item \textbf{Model = data}
+                \item Prediction: mean of target values in neighborhood
+            \end{itemize}
+            \column{0.45\textwidth}
+            \begin{figure}
+                \centering
+                \fbox{\includegraphics[width=\linewidth]{images/k}}
+            \end{figure}
+        \end{columns}
+    \end{frame}
+
+    \begin{frame}{Dataset}
+        \begin{itemize}
+            \item \textbf{Given}: temperatures + humidity of specific rooms in the house
+            \item \textbf{Objective}: predict Room Humidity in kitchen
+            \item Measurement every 10 minutes, for 4 months
+        \end{itemize}
+        \begin{figure}
+            \centering
+            \fbox{\includegraphics[width=\linewidth]{images/table}}
+        \end{figure}
+    \end{frame}
+
 
     \begin{frame}{Experimental setup}
         \begin{columns}[onlytextwidth]
