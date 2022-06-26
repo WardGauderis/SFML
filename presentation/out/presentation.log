@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Arch Linux)  (format=lualatex 2022.6.14)  26 JUN 2022 13:48
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022/Arch Linux)  (format=lualatex 2022.6.14)  26 JUN 2022 14:04
  restricted system commands enabled.
  file:line:error style messages enabled.
 **presentation.tex
@@ -1478,27 +1478,33 @@ Overfull \hbox (3.08055pt too wide) detected at line 24
  []
 
 
-Overfull \hbox (62.61237pt too wide) in paragraph at lines 37--37
+Overfull \hbox (3.08055pt too wide) detected at line 37
+[][]$[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][][][][][] $[]$[][][][]
+[][][][] $[]$[][][][][][]
+ []
+
+
+Overfull \hbox (62.61237pt too wide) in paragraph at lines 50--50
 []\TU/FiraMono(0)/m/n/6 > linear = svm.SVC(kernel='linear', C=1000)[] 
  []
 
 
-Overfull \hbox (44.61234pt too wide) in paragraph at lines 37--37
+Overfull \hbox (44.61234pt too wide) in paragraph at lines 50--50
 []\TU/FiraMono(0)/m/n/6 > linear = model.fit(X_train, y_train)[] 
  []
 
-./out/presentation.vrb:42: Missing $ inserted.
+./out/presentation.vrb:55: Missing $ inserted.
 <inserted text> 
 $
-l.42             \frac{1}{2}
+l.55             \frac{1}{2}
                           \mathbf{w}^T\mathbf{w} + \text{C} \sum_{n=1}^{N} \...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./out/presentation.vrb:42: Extra }, or forgotten $.
+./out/presentation.vrb:55: Extra }, or forgotten $.
 \frac  ...ck {\begingroup #1\endgroup \@@over #2}}
                                                   
-l.42             \frac{1}{2}
+l.55             \frac{1}{2}
                           \mathbf{w}^T\mathbf{w} + \text{C} \sum_{n=1}^{N} \...
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1506,18 +1512,18 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./out/presentation.vrb:43: Missing $ inserted.
+./out/presentation.vrb:56: Missing $ inserted.
 <inserted text> 
 $
-l.43         \end{columns}
+l.56         \end{columns}
                         
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./out/presentation.vrb:43: Missing } inserted.
+./out/presentation.vrb:56: Missing } inserted.
 <inserted text> 
 }
-l.43         \end{columns}
+l.56         \end{columns}
                         
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1602,85 +1608,85 @@ Package luatex.def Info: images/30.png  used on input line 46.
 
 <./images/3.png><./images/5.png><./images/10.png><./images/15.png><./images/20.p
 ng><./images/30.png>]
-./presentation.tex:423: Illegal parameter number in definition of \iterate.
+./presentation.tex:436: Illegal parameter number in definition of \iterate.
 <to be read again> 
 S
-l.423     \end{frame}
+l.436     \end{frame}
                    
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-./presentation.tex:423: Illegal parameter number in definition of \iterate.
+./presentation.tex:436: Illegal parameter number in definition of \iterate.
 <to be read again> 
 S
-l.423     \end{frame}
+l.436     \end{frame}
                    
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-./presentation.tex:423: Illegal parameter number in definition of \iterate.
+./presentation.tex:436: Illegal parameter number in definition of \iterate.
 <to be read again> 
 S
-l.423     \end{frame}
+l.436     \end{frame}
                    
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-./presentation.tex:423: Illegal parameter number in definition of \iterate.
+./presentation.tex:436: Illegal parameter number in definition of \iterate.
 <to be read again> 
 S
-l.423     \end{frame}
+l.436     \end{frame}
                    
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-./presentation.tex:423: Illegal parameter number in definition of \iterate.
+./presentation.tex:436: Illegal parameter number in definition of \iterate.
 <to be read again> 
 S
-l.423     \end{frame}
+l.436     \end{frame}
                    
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-./presentation.tex:423: Illegal parameter number in definition of \iterate.
+./presentation.tex:436: Illegal parameter number in definition of \iterate.
 <to be read again> 
 S
-l.423     \end{frame}
+l.436     \end{frame}
                    
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-./presentation.tex:423: Illegal parameter number in definition of \beamer@doifi
+./presentation.tex:436: Illegal parameter number in definition of \beamer@doifi
 nframe.
 <to be read again> 
 S
-l.423     \end{frame}
+l.436     \end{frame}
                    
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-./presentation.tex:423: Illegal parameter number in definition of \beamer@doifi
+./presentation.tex:436: Illegal parameter number in definition of \beamer@doifi
 nframe.
 <to be read again> 
 S
-l.423     \end{frame}
+l.436     \end{frame}
                    
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
 are all screwed up? I'm going to assume that you meant ##.
 
-./presentation.tex:423: Illegal parameter number in definition of \beamer@doifi
+./presentation.tex:436: Illegal parameter number in definition of \beamer@doifi
 nframe.
 <to be read again> 
 S
-l.423     \end{frame}
+l.436     \end{frame}
                    
 You meant to type ## instead of #, right?
 Or maybe a } was forgotten somewhere earlier, and things
@@ -1688,13 +1694,13 @@ are all screwed up? I'm going to assume that you meant ##.
 
 File: image-20220624192228376.png Graphic file (type png)
 <use image-20220624192228376.png>
-Package luatex.def Info: image-20220624192228376.png  used on input line 423.
+Package luatex.def Info: image-20220624192228376.png  used on input line 436.
 (luatex.def)             Requested size: 101.40622pt x 65.42809pt.
-./presentation.tex:423: You can't use `macro parameter character #' in horizonta
+./presentation.tex:436: You can't use `macro parameter character #' in horizonta
 l mode.
 \beamer@doifinframe ...\text {linear}} = 0.22\] ##
                                                   SV’s: 371/800 \column {0...
-l.423     \end{frame}
+l.436     \end{frame}
                    
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1703,13 +1709,13 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 File: images/30.png Graphic file (type png)
 <use images/30.png>
-Package luatex.def Info: images/30.png  used on input line 423.
+Package luatex.def Info: images/30.png  used on input line 436.
 (luatex.def)             Requested size: 101.40622pt x 65.35309pt.
-./presentation.tex:423: You can't use `macro parameter character #' in horizonta
+./presentation.tex:436: You can't use `macro parameter character #' in horizonta
 l mode.
 \beamer@doifinframe ... {poly-30degr}} = 0.54\] ##
                                                   SV’s: 492/800 \column {0...
-l.423     \end{frame}
+l.436     \end{frame}
                    
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1718,13 +1724,13 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 
 File: image-20220624192258535.png Graphic file (type png)
 <use image-20220624192258535.png>
-Package luatex.def Info: image-20220624192258535.png  used on input line 423.
+Package luatex.def Info: image-20220624192258535.png  used on input line 436.
 (luatex.def)             Requested size: 101.40622pt x 65.10405pt.
-./presentation.tex:423: You can't use `macro parameter character #' in horizonta
+./presentation.tex:436: You can't use `macro parameter character #' in horizonta
 l mode.
 \beamer@doifinframe ...^{\text {RBF}} = 0.013\] ##
                                                   SV’s: 15/800 \end {colum...
-l.423     \end{frame}
+l.436     \end{frame}
                    
 Sorry, but I'm not programmed to handle this case;
 I'll just pretend that you didn't ask for it.
@@ -1741,20 +1747,20 @@ return to the right one by typing `I}' or `I$' or `I\par'.
 <images/DT1.png, id=251, 716.6775pt x 359.84438pt>
 File: images/DT1.png Graphic file (type png)
 <use images/DT1.png>
-Package luatex.def Info: images/DT1.png  used on input line 449.
+Package luatex.def Info: images/DT1.png  used on input line 462.
 (luatex.def)             Requested size: 185.90906pt x 93.34319pt.
 
-Overfull \hbox (0.79999pt too wide) in paragraph at lines 449--449
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 462--462
  [] 
  []
 
 <images/DT2.png, id=252, 726.46407pt x 630.85687pt>
 File: images/DT2.png Graphic file (type png)
 <use images/DT2.png>
-Package luatex.def Info: images/DT2.png  used on input line 449.
+Package luatex.def Info: images/DT2.png  used on input line 462.
 (luatex.def)             Requested size: 107.55333pt x 93.3923pt.
 
-Overfull \hbox (0.79999pt too wide) in paragraph at lines 449--449
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 462--462
  [] 
  []
 
@@ -1764,10 +1770,10 @@ Overfull \hbox (0.79999pt too wide) in paragraph at lines 449--449
 <images/k.png, id=262, 406.51875pt x 347.2975pt>
 File: images/k.png Graphic file (type png)
 <use images/k.png>
-Package luatex.def Info: images/k.png  used on input line 464.
+Package luatex.def Info: images/k.png  used on input line 477.
 (luatex.def)             Requested size: 138.2795pt x 118.13257pt.
 
-Overfull \hbox (0.79999pt too wide) in paragraph at lines 464--464
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 477--477
  [] 
  []
 
@@ -1777,10 +1783,10 @@ Overfull \hbox (0.79999pt too wide) in paragraph at lines 464--464
 <images/table.png, id=271, 1081.03876pt x 252.945pt>
 File: images/table.png Graphic file (type png)
 <use images/table.png>
-Package luatex.def Info: images/table.png  used on input line 476.
+Package luatex.def Info: images/table.png  used on input line 489.
 (luatex.def)             Requested size: 307.28987pt x 71.90094pt.
 
-Overfull \hbox (0.79999pt too wide) in paragraph at lines 476--476
+Overfull \hbox (0.79999pt too wide) in paragraph at lines 489--489
  [] 
  []
 
@@ -1792,7 +1798,7 @@ Overfull \hbox (0.79999pt too wide) in paragraph at lines 476--476
 <images/validation.png, id=288, 604.2575pt x 277.035pt>
 File: images/validation.png Graphic file (type png)
 <use images/validation.png>
-Package luatex.def Info: images/validation.png  used on input line 512.
+Package luatex.def Info: images/validation.png  used on input line 525.
 (luatex.def)             Requested size: 307.28987pt x 140.88438pt.
  [28
 
@@ -1800,7 +1806,7 @@ Package luatex.def Info: images/validation.png  used on input line 512.
 <images/full.png, id=296, 1168.365pt x 606.265pt>
 File: images/full.png Graphic file (type png)
 <use images/full.png>
-Package luatex.def Info: images/full.png  used on input line 521.
+Package luatex.def Info: images/full.png  used on input line 534.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
  [29
 
@@ -1808,7 +1814,7 @@ Package luatex.def Info: images/full.png  used on input line 521.
 <images/baseline_tree.png, id=305, 1168.365pt x 606.265pt>
 File: images/baseline_tree.png Graphic file (type png)
 <use images/baseline_tree.png>
-Package luatex.def Info: images/baseline_tree.png  used on input line 537.
+Package luatex.def Info: images/baseline_tree.png  used on input line 550.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
 
 Package fontspec Info: Font family 'FiraSansLight(1)' created for font 'Fira
@@ -1846,7 +1852,7 @@ tlig;+tnum;"
 tlig;+tnum;+smcp;"
 
 
-Overfull \vbox (5.94164pt too high) detected at line 537
+Overfull \vbox (5.94164pt too high) detected at line 550
  []
 
 [30
@@ -1855,10 +1861,10 @@ Overfull \vbox (5.94164pt too high) detected at line 537
 <images/tuned_tree.png, id=314, 1168.365pt x 606.265pt>
 File: images/tuned_tree.png Graphic file (type png)
 <use images/tuned_tree.png>
-Package luatex.def Info: images/tuned_tree.png  used on input line 553.
+Package luatex.def Info: images/tuned_tree.png  used on input line 566.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
 
-Overfull \vbox (5.94164pt too high) detected at line 553
+Overfull \vbox (5.94164pt too high) detected at line 566
  []
 
 [31
@@ -1867,10 +1873,10 @@ Overfull \vbox (5.94164pt too high) detected at line 553
 <images/baseline_k.png, id=325, 1168.365pt x 606.265pt>
 File: images/baseline_k.png Graphic file (type png)
 <use images/baseline_k.png>
-Package luatex.def Info: images/baseline_k.png  used on input line 569.
+Package luatex.def Info: images/baseline_k.png  used on input line 582.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
 
-Overfull \vbox (5.94164pt too high) detected at line 569
+Overfull \vbox (5.94164pt too high) detected at line 582
  []
 
 [32
@@ -1879,10 +1885,10 @@ Overfull \vbox (5.94164pt too high) detected at line 569
 <images/tuned_k.png, id=334, 1168.365pt x 606.265pt>
 File: images/tuned_k.png Graphic file (type png)
 <use images/tuned_k.png>
-Package luatex.def Info: images/tuned_k.png  used on input line 586.
+Package luatex.def Info: images/tuned_k.png  used on input line 599.
 (luatex.def)             Requested size: 307.28987pt x 159.4476pt.
 
-Overfull \vbox (5.94164pt too high) detected at line 586
+Overfull \vbox (5.94164pt too high) detected at line 599
  []
 
 [33
@@ -1911,7 +1917,7 @@ Here is how much of LuaTeX's memory you used:
    53 hlist, 8 vlist, 5 rule, 52 disc, 8 local_par, 2 math, 170 glue, 104 kern, 
 36 penalty, 461 glyph, 150 attribute, 70 glue_spec, 150 attribute_list, 4 write,
  3 pdf_action, 48 pdf_colorstack nodes
-   avail lists: 1:1,2:799,3:572,4:192,5:245,6:70,7:1370,8:37,9:563,10:14,11:107
+   avail lists: 1:1,2:819,3:635,4:192,5:245,6:70,7:1370,8:37,9:590,10:14,11:107
  51199 multiletter control sequences out of 65536+600000
  132 fonts using 26817519 bytes
  128i,16n,131p,1810b,920s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1933,7 +1939,7 @@ s/cm/cmr8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
 -dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texmf-dist/fonts/type
 1/public/amsfonts/cm/cmsy8.pfb></usr/share/texmf-dist/fonts/type1/public/amsfont
 s/symbols/msbm10.pfb>
-Output written on presentation.pdf (34 pages, 7480733 bytes).
+Output written on presentation.pdf (34 pages, 7480886 bytes).
 
 PDF statistics: 441 PDF objects out of 1000 (max. 8388607)
  313 compressed objects within 4 object streams
