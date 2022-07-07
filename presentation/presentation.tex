@@ -432,7 +432,12 @@
         \bigskip
 
         \small
-        \[\mathbb{E}[E_{out}] \le \frac{\mathbb{E}[\text{\# of SVs}]}{\text{N} - 1} = 0.019\]
+        \begin{columns}
+            \column{0.5\textwidth}
+            \begin{block}{RBF}
+                \[\mathbb{E}[E_{out}] \le \frac{\mathbb{E}[\text{\# of SVs}]}{\text{N} - 1} = 0.019\]
+            \end{block}
+        \end{columns}
     \end{frame}
 
 
@@ -443,7 +448,7 @@
 
     \begin{frame}{Decision Tree Regressor}
         \begin{itemize}
-            \item Splits data into groups
+            \item Splits data into subsets
             \item Training: searches best features/thresholds to split groups
             \item \textbf{Model = decision tree}
         \end{itemize}
